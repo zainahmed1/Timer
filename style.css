@@ -1,25 +1,36 @@
 body {
     margin: 0;
     padding: 0;
-    background: #262626;
+    background:#191919; 
+    background-image: url(images/yellow.jpg);
+    background-repeat: no-repeat;
   }
-  
-  ul {
+  /* img{
+    height: 482px;
+    width: 70%;
+    margin-left: 479px;
+    background-color: #191919;
+  } */
+  i{
+    z-index: 1;
+    justify-content: space-between;
+  }
+  ol {
     margin: 0;
     padding: 0;
-    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+   
   }
   
-  ul li {
+  ol li {
     list-style: none;
-    margin: 0 15px;
+    margin: 28px 0px;
   }
   
-  ul li a {
+  ol li a {
     position: relative; 
     display: flex;
     width: 60px;
@@ -30,10 +41,10 @@ body {
     border-radius: 50%;
     font-size: 30px;
     color: #666;
-    transition: .5s;
+    transition: 5s;
   }
   
-  ul li a::before {
+  ol li a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -47,13 +58,14 @@ body {
     z-index: -1;
   }
   
-  ul li a:hover::before {
+  ol li a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #ffee10;
   }
   
-  ul li a:hover {
+  ol li a:hover {
     color: #ffee10;
     box-shadow: 0 0 5px #ffee10;
     text-shadow: 0 0 5px #ffee10;
   }
+  

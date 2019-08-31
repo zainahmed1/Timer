@@ -3,8 +3,8 @@ let sound = new Audio("sounds/instru.mp3");
 var countDownDate = new Date("NOV 16, 2019 04:00:00").getTime();
 
 var x = setInterval(function () {
-    sound.play();
-    sound.volume = 0.2;
+    // sound.play();
+    // sound.volume = 0.2;
 
     var now = new Date().getTime(); 
 

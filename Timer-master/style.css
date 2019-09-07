@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Pacifico', cursive;
+  }
+  /* img{
+    height: 482px;
+    width: 70%;
+    margin-left: 479px;
+    background-color: #191919;
+  } */
+  em{
+    z-index: 1;
+      
+  }
+  ol {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  ol li {
+    list-style: none;
+    margin: 28px 0px;
+  }
+  
+  ol li a {
+    position: relative; 
+    display: flex;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #b3a1ee;
+    transition: 2s;
+    margin-top: -25px;
+    animation-name: dil;
+  }
+    
+  ol li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(#f6e59f, #b3a1ee, #f6e59f);
+    transition: 2s;
+    animation-name: beat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+  }
+ol li a ::after{
+  /* content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px; */
+  animation-name: backdiv;
+    animation-duration: 6s; 
+    animation-iteration-count: infinite;
+}  
+@keyframes beat {
+  25% {
+    transform: scale(3) ;
+    opacity: 1.2;
+  }
+  100% {
+    transition-duration: 56s;
+  }
+}
+
+  ol li a:hover::before {
+    transform: scale(3);
+    box-shadow: 0 0 15px #b3a1ee;
+  }
+  @keyframes backdiv {
+    50% {
+      background: #ffe6f2;
+    }
+  }  
+  ol li a:hover {
+    color: #ffee10;
+    box-shadow: 0 0 5px #b3a1ee;
+    text-shadow: 0 0 5px #ffee10;
+  }
+  
